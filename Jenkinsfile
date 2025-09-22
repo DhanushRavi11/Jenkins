@@ -1,7 +1,7 @@
 pipeline{
  agent any
  stages{
-  stage('Git checkout'){
+  stage('git-checkout'){
    steps{
     git branch: 'jenkins', url: 'https://github.com/DhanushRavi11/Jenkins.git'   
 
