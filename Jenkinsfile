@@ -5,7 +5,7 @@ pipeline{
   jdk 'java-11'
  }
  stages{
-  stage('Git checkout'){
+  stage('git-checkout'){
    steps{
     git branch: 'version-1', url: 'https://github.com/DhanushRavi11/Jenkins.git'   
 
@@ -14,7 +14,7 @@ pipeline{
  
   stage('compile'){
    steps{
-    sh "mvn clean"
+    sh "mvn compile"
    }
   }
 
